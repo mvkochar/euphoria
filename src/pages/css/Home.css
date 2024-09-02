@@ -110,3 +110,320 @@
         color: #fff;
     }
 }
+
+.home-arrival {
+    margin-top: 99.8px;
+    margin-left: 100px;
+    margin-right: 100.41px;
+}
+
+.home-bl-title {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: .02em;
+    color: #3C4242;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 30px;
+        background: #8A33FD;
+        border-radius: 10px;
+    }
+}
+
+.home-arrival-box {
+    margin-top: 69.8px;
+    gap: 23.41px;
+}
+
+.home-arrival-content {
+    gap: 39px;
+
+    .arival-item-title {
+        margin-top: 32.85px;
+        margin-left: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: .01em;
+        color: #3C4242;
+    }
+}
+
+.home-saving {
+    margin-top: 101px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.home-saving-box {
+    margin-top: 70px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.home-saving .saving-item-one,
+.home-saving .saving-item-two,
+.home-saving .saving-item-three {
+    width: 400px;
+}
+
+
+.home-saving .saving-item-one,
+.home-saving .saving-item-two {
+    color: #fff;
+}
+
+.home-saving .saving-item-three,
+.home-saving .saving-item-four, 
+.home-saving .saving-item-five {
+    color:#3C4242;
+} 
+
+.home-saving .saving-item-four, 
+.home-saving .saving-item-five {
+    width: 610px;
+} 
+
+.home-saving .saving-item-one {
+    padding-top: 64.4px;
+    padding-bottom: 64.47px;
+    padding-left: 20px;
+    background: url("/public/images/saving/1.png") no-repeat;
+
+    .savivig-item-subtitle {
+        margin-top: 9.47px;
+    }
+
+    .saving-item-note {
+        margin-top: 9.9px;
+    }
+
+    .saving-item-arrow {
+        margin-top: 30.84px;
+        margin-left: 45.14px;
+    }
+
+    .saving-item-shop {
+        margin-top: 40px;
+    }
+}
+
+.home-saving .saving-item-two {
+    padding-top: 34.33px;
+    padding-bottom: 41px;
+    padding-left: 185px;
+    background: url("/public/images/saving/2.png") no-repeat;
+
+    .saving-item-cat {
+        margin-left: 49px;
+    }
+
+    .saving-item-title {
+        margin-top: 28.67px;
+        margin-left: 48px;
+    }
+
+    .savivig-item-subtitle {
+        margin-top: 15px;
+    }
+
+    .saving-item-note {
+        margin-top: 10px;
+        margin-left: 29px;
+    }
+
+    .saving-item-arrow {
+        margin-top: 27px;
+        margin-left: 86.68px;
+    }
+
+    .saving-item-shop {
+        margin-top: 30px;
+        margin-left: 67px;
+    }
+}
+
+.home-saving .saving-item-three {
+    padding-top: 64.74px;
+    padding-bottom: 67.67px;
+    padding-left: 227px;
+    background: url("/public/images/saving/3.png") no-repeat;
+
+    .savivig-item-subtitle {
+        margin-top: 9.47px;
+    }
+
+    .saving-item-note {
+        margin-top: 9.9px;
+    }
+
+    .saving-item-arrow {
+        margin-top: 30.84px;
+        margin-left: 51.14px;
+    }
+
+    .saving-item-shop {
+        margin-top: 36.76px;
+    }
+}
+
+.home-saving .saving-item-four {
+    padding-top: 45.42px;
+    padding-bottom: 50.67px;
+    padding-left: 357px;
+    background: url("/public/images/saving/4.png") no-repeat;
+
+    .savivig-item-subtitle {
+        margin-top: 10.82px;
+    }
+
+    .saving-item-note {
+        margin-top: 11.75px;
+    }
+
+    .saving-item-arrow {
+        margin-top: 36.39px;
+        margin-left: 53.76px;
+    }
+
+    .saving-item-shop {
+        margin-top: 43.96px;
+    }
+}
+
+.home-saving .saving-item-five {
+    padding-top: 45.09px;
+    padding-bottom: 50.67px;
+    padding-left: 350px;
+    background: url("/public/images/saving/5.png") no-repeat;
+
+    .savivig-item-subtitle {
+        margin-top: 10.82px;
+    }
+
+    .saving-item-note {
+        margin-top: 11.75px;
+    }
+
+    .saving-item-arrow {
+        margin-top: 36.39px;
+        margin-left: 52.76px;
+    }
+
+    .saving-item-shop {
+        margin-top: 44.29px;
+    }
+}
+
+.home-saving .saving-item-cat {
+    width: 104px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3C4242;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+}
+
+.home-saving .saving-item-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: .02em;
+}
+
+.home-saving .savivig-item-subtitle {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.home-saving .saving-item-note {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.home-saving .saving-item-shop {
+    display: block;
+    width: 111px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home-saving .saving-item-one .saving-item-shop,
+.home-saving .saving-item-two .saving-item-shop {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.home-saving .saving-item-three .saving-item-shop,
+.home-saving .saving-item-four .saving-item-shop,
+.home-saving .saving-item-five .saving-item-shop {
+    border: 1px solid #3C4242;
+    color: #3C4242;
+}
+
+.home-better {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.home-better-info {
+    width: 614px;
+    padding-top: 183px;
+    padding-bottom: 174.72px;
+    padding-left: 74px;
+    background: url("/public/images/home-better-info.png") no-repeat;
+    color: #fff;
+}
+
+.home-better-title {
+    width: 466px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 34px;
+    letter-spacing: .021em;
+}
+
+.home-better-subtitle {
+    width: 436px;
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: .01em;
+    opacity: 0.8;
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+.home-better-shop {
+    display: block;
+    width: 168px;
+    margin-top: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #3C4242;
+}
