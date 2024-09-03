@@ -1,5 +1,7 @@
 import React from 'react'
 import './css/Home.css'
+import { MenCategoriesList, WomenCategoriesList } from '../compontents/CatategoriesList/CategoriesList'
+import CategoriesItem from '../compontents/CategoriesItem/CategoriesItem'
 
 const Home = () => {
   return (
@@ -100,12 +102,54 @@ const Home = () => {
         <div className="home-better-info">
           <h2 className="home-beter-title">We made your everyday fashion better</h2>
           <h4 className="home-better-subtitle">
-            In our journey to improve everyday fashion, euphoria presents <span>Everyday</span> wear range - 
+            In our journey to improve everyday fashion, euphoria presents <span>Everyday</span> wear range -
             Comfortable & Affordable fashion 24/7
           </h4>
           <a href="" className="home-better-shop">Shop Now</a>
         </div>
         <div><img src="/images/home-better.png" alt="home-better" /></div>
+      </section>
+      <section className="home-men">
+        <h2 className="home-bl-title">Categories For Men</h2>
+        <div className="home-men-box d-f jc-sb">
+          {
+            MenCategoriesList.map((category) => {
+              return (
+                <CategoriesItem
+                  image={category.image}
+                  title={category.title}
+                  subtitle={category.subtitle}
+                />
+              )
+            })
+          }
+        </div>
+      </section>
+      <section className="home-women">
+        <h2 className="home-bl-title">Categories For Women</h2>
+        <div className="home-women-box d-f jc-sb">
+          {
+            WomenCategoriesList.map((category) => {
+              return (
+                <CategoriesItem
+                  image={category.image}
+                  title={category.title}
+                  subtitle={category.subtitle}
+                />
+              )
+            })
+          }
+        </div>
+      </section>
+      <section className='home-brands'>
+        <h2 className="home-brands-title">Top Brands Deal</h2>
+        <h4 className="home-brands-subtitle">Up To <span>60%</span> off on brands</h4>
+        <div className="home-brands-box d-f jc-sb">
+          <div><img src="/images/brand1.png" alt="brand1" /></div>
+          <div><img src="/images/brand2.png" alt="brand2" /></div>
+          <div><img src="/images/brand3.png" alt="brand3" /></div>
+          <div><img src="/images/brand4.png" alt="brand4" /></div>
+        </div>
       </section>
     </>
   )

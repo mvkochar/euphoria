@@ -180,15 +180,15 @@
 }
 
 .home-saving .saving-item-three,
-.home-saving .saving-item-four, 
+.home-saving .saving-item-four,
 .home-saving .saving-item-five {
-    color:#3C4242;
-} 
+    color: #3C4242;
+}
 
-.home-saving .saving-item-four, 
+.home-saving .saving-item-four,
 .home-saving .saving-item-five {
     width: 610px;
-} 
+}
 
 .home-saving .saving-item-one {
     padding-top: 64.4px;
@@ -426,4 +426,64 @@
     font-size: 18px;
     text-align: center;
     color: #3C4242;
+}
+
+.home-men {
+    margin-top: 100.28px;
+    margin-left: 101px;
+    margin-right: 100px;
+}
+
+.home-men-box {
+    margin-top: 70px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.home-women {
+    margin-top: 101px;
+    margin-left: 100px;
+    margin-right: 101px;
+}
+
+.home-women-box {
+    margin-top: 70px;
+}
+
+.home-brands {
+    margin-top: 100px;
+    margin-left: 106px;
+    margin-right: 101px;
+    padding-top: 43.84px;
+    padding-bottom: 59.89px;
+    background-color: #3C4242;
+    border: 1.07px solid #323232;
+    border-radius: 12px;
+}
+
+.home-brands-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.home-brands-subtitle {
+    margin-top: 25.86px;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+
+    span {
+        font-weight: 700;
+        color: #FBD103;
+    }
+}
+
+.home-brands-box {
+    margin-top: 67.04px;
+    margin-left: 122.98px;
+    margin-right: 124.5px;
 }

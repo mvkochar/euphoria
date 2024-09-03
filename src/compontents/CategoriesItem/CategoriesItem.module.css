@@ -1,0 +1,27 @@
+.item {
+    width: 21.4%;
+}
+
+.item_info {
+    margin-top: 15.64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_title {
+    font-weight: 700;
+    font-size: 17.88px;
+    letter-spacing: -.04em;
+    line-height: 1.4;
+    color: #2A2F2F;
+} 
+
+.item_subtitle {
+    margin-top: 4px;
+    font-weight: 500;
+    font-size: 13.41px;
+    line-height: 1.4;
+    letter-spacing: -.04em;
+    color: #7F7F7F;
+}
