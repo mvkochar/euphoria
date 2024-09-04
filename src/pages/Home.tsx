@@ -2,6 +2,8 @@ import React from 'react'
 import './css/Home.css'
 import { MenCategoriesList, WomenCategoriesList } from '../compontents/CatategoriesList/CategoriesList'
 import CategoriesItem from '../compontents/CategoriesItem/CategoriesItem'
+import ProductsItem from '../compontents/ProductsItem/ProductsItem'
+import ProductsList from '../compontents/ProductsList/ProducttsList'
 
 const Home = () => {
   return (
@@ -149,6 +151,86 @@ const Home = () => {
           <div><img src="/images/brand2.png" alt="brand2" /></div>
           <div><img src="/images/brand3.png" alt="brand3" /></div>
           <div><img src="/images/brand4.png" alt="brand4" /></div>
+        </div>
+      </section>
+      <section className='home-limelight'>
+        <h2 className="home-bl-title">In The Limelight</h2>
+        <div className="home-limelight-box d-f jc-sb">
+          {
+            ProductsList.filter((elem) => elem.id < 4).map((product) => {
+              return (
+                <ProductsItem
+                  id={product.id}
+                  image={product.image}
+                  title={product.title}
+                  brand={product.brand}
+                  price={product.price}
+                />
+              )
+            })
+          }
+        </div>
+      </section>
+      <section className='home-feedback'>
+        <h2 className="home-bl-title">Feedback</h2>
+        <div className="home-feedback-box d-f jc-sb">
+          <div className="home-feedback-item">
+            <div className="d-f jc-sb">
+              <div><img src="/images/author1.png" alt="author1" /></div>
+              <div className="home-feedback-rating d-f">
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star_half.png" alt="star-half" /></div>
+                <div><img src="/images/star_outline.png" alt="star-outline" /></div>
+              </div>
+            </div>
+            <h3 className="feedback-item-title">Floyd Miles</h3>
+            <p className="feedback-item-desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Velit officia consequat duis enim velit mollit. <br />
+              Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+          <div className="home-feedback-item">
+            <div className="d-f jc-sb">
+              <div><img src="/images/author2.png" alt="author2" /></div>
+              <div className="home-feedback-rating d-f">
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star_outline.png" alt="star-outline" /></div>
+              </div>
+            </div>
+            <h3 className="feedback-item-title">Ronald Richards</h3>
+            <p className="feedback-item-desc">
+              Ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+          <div className="home-feedback-item">
+            <div className="d-f jc-sb">
+              <div><img src="/images/author3.png" alt="author3" /></div>
+              <div className="home-feedback-rating d-f">
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star.png" alt="star" /></div>
+                <div><img src="/images/star_half.png" alt="star-half" /></div>
+                <div><img src="/images/star_outline.png" alt="star-outline" /></div>
+              </div>
+            </div>
+            <h3 className="feedback-item-title">Savannah Nguyen</h3>
+            <p className="feedback-item-desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+              Velit officia consequat duis enim velit mollit. <br />
+              Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt 
+              ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
         </div>
       </section>
     </>

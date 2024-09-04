@@ -1,0 +1,93 @@
+.footer {
+    padding: 59px 110px;
+    background-color: #3C4242;
+}
+
+.footer-bar {
+    padding-left: 76px;
+    padding-right: 85px;
+}
+
+.footer-bl-title {
+    font-weight: 700;
+    font-size: 28.58px;
+    line-height: 2;
+    color: #F6F6F6;
+}
+
+.footer-bl-list {
+    list-style-type: none;
+    margin-top: 15px;
+
+    li {
+        margin-bottom: 5px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 2;
+        color: #F6F6F6;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #F6F6F6;
+
+            &:hover {
+                color: #FFFACD;
+            }
+        }
+    }
+}
+
+.footer-about {
+    padding-left: 83px;
+    padding-right: 170.1px;
+}
+
+.footer-social {
+    gap: 9.97px;
+    align-self: flex-end;
+}
+
+.footer-download-title {
+    font-weight: 700;
+    font-size: 28.58px;
+    line-height: 2;
+    color: #F6F6F6;
+}
+
+.footer-download-box {
+    gap: 21.24px;
+    margin-top: 19px;
+}
+
+.footer-popular {
+    width: 1220px;
+    margin-top: 49.98px;
+    padding-left: 76px;
+    padding-right: 32.19px;
+    border-top: 1px solid #BEBCBD;
+    border-bottom: 1px solid #BEBCBD;
+
+    select {
+        display: block;
+        width: 100%;
+        padding-top: 29px;
+        padding-bottom: 34px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-weight: 700;
+        font-size: 28.58px;
+        color: #F6F6F6;
+    }
+}
+
+.footer-copyright {
+    margin-top: 37px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}

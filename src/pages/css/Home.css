@@ -487,3 +487,51 @@
     margin-left: 122.98px;
     margin-right: 124.5px;
 }
+
+.home-limelight {
+    margin-top: 76.83px;
+    margin-left: 100px;
+    margin-right: 102px;
+}
+
+.home-limelight-box {
+    margin-top: 70px;
+}
+
+.home-feedback {
+    margin-top: 100px;
+    margin-bottom: 136.19px;
+    margin-left: 100px;
+    margin-right: 103px;
+}
+
+.home-feedback-box {
+    margin-top: 70px;
+}
+
+.home-feedback-item {
+    width: 396.87px;
+    padding: 23px;
+    border: 1.8px solid #BEBCBD;
+    border-radius: 10px;
+
+    .feedback-item-title {
+        margin-top: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: .02em;
+        color: #3C4242;
+    }
+
+    .feedback-item-desc {
+        margin-top: 20px;
+        font-size: 14px;
+        letter-spacing: .02em;
+        color: #807D7E;
+    }
+}
+
+.home-feedback-rating {
+    gap: 3.87px;
+}
