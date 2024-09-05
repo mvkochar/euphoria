@@ -1,15 +1,16 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header className='header d-f jc-sb align-center'>
-      <div><img src="/images/logo.svg" alt="Logo" /></div>
+      <div> <Link to="/"><img src="/images/logo.svg" alt="Logo" /></Link> </div>
       <nav>
         <ul className="header-nav d-f">
           <li className="header-nav-item"><a href="">Shop</a></li>
           <li className="header-nav-item"><a href="">Men</a></li>
-          <li className="header-nav-item"><a href="">Women</a></li>
+          <li className="header-nav-item"><Link to="/catalog">Women</Link></li>
           <li className="header-nav-item"><a href="">Combos</a></li>
           <li className="header-nav-item"><a href="">Jogger</a></li>
         </ul>
@@ -22,7 +23,7 @@ const Header = () => {
         <div className="header-actions-item"><img src="/images/heart.png" alt="heart" /></div>
         <button className="header-actions-item d-b cur-p"><img src="/images/user.png" alt="user" /></button>
         <a href="" className="header-actions-item d-b"><img src="/images/cart.png" alt="cart" /></a>
-      </div> 
+      </div>
     </header>
   )
 }
