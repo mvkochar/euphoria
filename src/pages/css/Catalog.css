@@ -1,5 +1,5 @@
 .catalog-wr {
-     margin-left: 100px;
+    margin-left: 100px;
     margin-right: 101px;
     margin-bottom: 200px;
     border-top: 1px solid #BEBCBD;
@@ -63,7 +63,7 @@
     padding-left: 31px;
     padding-right: 34px;
     border-bottom: 1px solid #BEBCBD;
-} 
+}
 
 .catalog-filter .price-info {
     margin-top: 20px;
@@ -149,7 +149,7 @@
         }
     }
 
-    
+
     &:nth-child(5) {
         .color-shape {
             background-color: #345EFF;
@@ -242,7 +242,7 @@
     margin-top: 19.81px;
     padding-bottom: 20px;
     padding-left: 30px;
-    padding-right:  33px;
+    padding-right: 33px;
     border-bottom: 1px solid #BEBCBD;
 
     .dress-title {
@@ -266,4 +266,146 @@
     font-weight: 600;
     font-size: 16px;
     color: #8A8989;
+}
+
+.catalog-main {
+    width: 895px;
+    margin-top: 50px;
+}
+
+.catalog-title {
+    font-weight: 600;
+    font-size: 22px;
+    color: #3F4646;
+}
+
+.catalog-tabs {
+    gap: 25px;
+
+    .tabs-btn__active {
+        color: #8A33FD;
+    }
+}
+
+.catalog-tabs-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 22px;
+    color: #3F4646;
+}
+
+.catalog-box {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.catalog-info {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .home-bl-title {
+        margin-bottom: 30px;
+    }
+}
+
+.catalog-info-subtitle {
+    margin-left: 21px;
+    margin-bottom: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: .02em;
+    color: #807D7E;
+}
+
+.catalog-info-desc {
+    margin-left: 21px;
+    font-size: 20px;
+    letter-spacing: .02em;
+    color: #807D7E;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.catalog-info-more {
+    display: block;
+    margin-top: 20px;
+    margin-left: 21px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: .02em;
+    color: #807D7E;
+}
+
+.catalog-best {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 99px;
+}
+
+.catalog-best-tb {
+    width: 1220px;
+    margin-top: 50px;
+    margin-left: 21px;
+    background-color: #F6F6F6;
+    border-collapse: collapse;
+
+    thead {    
+        th {
+            border-bottom: 1px solid #BEBCBD;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: .02em;
+            color: #3C4242;
+
+            &:first-child {
+                width: 70%;
+                padding-left: 84px;
+                text-align: left;
+                border-right: 1px solid #BEBCBD;
+            }
+
+            &:last-child {
+                text-align: center;
+            }
+        }
+    }
+
+    tbody {
+        td {
+            padding-top: 50px;
+            font-weight: 400;
+            font-size: 24px;
+            letter-spacing: .02em;
+            color: #807D7E;
+
+            &:first-child {
+                padding-left: 84px;
+                border-right: 1px solid #BEBCBD;
+            }
+
+            &:last-child {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.catalog-best-tb tbody tr:last-child td {
+    padding-bottom: 50px;
 }
