@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
+import SignDialog from '../SignDialog/SignDialog'
 
 const Header = () => {
   return (
@@ -21,7 +22,7 @@ const Header = () => {
       </form>
       <div className="header-actions d-f">
         <div className="header-actions-item"><img src="/images/heart.png" alt="heart" /></div>
-        <button className="header-actions-item d-b cur-p"><img src="/images/user.png" alt="user" /></button>
+        <SignDialog/>
         <a href="" className="header-actions-item d-b"><img src="/images/cart.png" alt="cart" /></a>
       </div>
     </header>
