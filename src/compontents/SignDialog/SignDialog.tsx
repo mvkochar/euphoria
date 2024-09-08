@@ -15,7 +15,6 @@ const style = {
     p: 4,
 };
 
-
 const SignDialog = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -31,8 +30,6 @@ const SignDialog = () => {
     }
 
     const [signType, setSignType] = React.useState(1)
-
-
 
     return (
         <div>
@@ -90,7 +87,7 @@ const SignDialog = () => {
                                                     <label htmlFor="agree">Agree to our Terms of use and Privacy Policy </label>
                                                 </div>
                                                 <div className="check-bl d-f">
-                                                    <input type="checkbox" name="subscribe" id="subscribe"/>
+                                                    <input type="checkbox" name="subscribe" id="subscribe" />
                                                     <label htmlFor="subscribe">Subscribe to our monthly newsletter</label>
                                                 </div>
                                             </div>
@@ -100,11 +97,11 @@ const SignDialog = () => {
                                 </div>
                                 <button className='sign-btn'>{signType === 1 ? "Sign In" : "Sign Up"}</button>
                                 <div className="have-bl d-f align-center">
-                                    <div className="have-title"> 
-                                        {signType === 1 ? "Don't have an account?" : "Already have an  account? "} 
+                                    <div className="have-title">
+                                        {signType === 1 ? "Don't have an account?" : "Already have an  account? "}
                                     </div>
-                                    <button type='button' className='have-btn' onClick={() => setSignType(signType === 1 ? 2 : 1)}>
-                                       {signType === 1 ? "Sign up" : "Log in"}
+                                    <button type='button' className='have-btn' onClick={() => { setSignType(signType === 1 ? 2 : 1) }}>
+                                        {signType === 1 ? "Sign up" : "Log in"}
                                     </button>
                                 </div>
                             </form>
