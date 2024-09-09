@@ -62,8 +62,8 @@
     border: 1px solid #F6F6F6;
     border-radius: 8px;
     text-align: center;
-
-    &:nth-child(2) {
-        padding-top: 4px;
-    }
 }
+
+.user-btn {
+    padding-top: 4px;
+} 
