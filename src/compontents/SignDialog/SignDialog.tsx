@@ -50,7 +50,7 @@ const SignDialog = () => {
         }
     }
 
-    
+    const [inputEmail, setInputEmail] = React.useState("")
 
     const checkEmail = (userEmail: string) => {
         return userEmail === correctEmail
@@ -85,11 +85,13 @@ const SignDialog = () => {
                                         <div className="input-bl d-f">
                                             <label htmlFor="signEmail">Email</label>
                                             <input type="email" className='reset-input' name="signEmail"
-                                                id="signEmail" placeholder='focus001@gmail.com' />
+                                                id="signEmail" value={inputEmail} placeholder='focus001@gmail.com'
+                                                onChange={e => setInputEmail(e.target.value) }
+                                            />
                                             <p className="error-msg">We can not find your email.</p>
                                         </div>
                                         <button type="button" className='sign-btn'
-                                            onClick={() => handleSendEmail(correctEmail)}
+                                            onClick={() => handleSendEmail(inputEmail)}
                                         >
                                             Send
                                         </button>
