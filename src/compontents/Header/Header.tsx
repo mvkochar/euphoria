@@ -23,7 +23,7 @@ const Header = () => {
       <div className="header-actions d-f">
         <div className="header-actions-item"><img src="/images/heart.png" alt="heart" /></div>
         <SignDialog/>
-        <a href="" className="header-actions-item d-b"><img src="/images/cart.png" alt="cart" /></a>
+        <Link to="/cart" className="header-actions-item d-b"><img src="/images/cart.png" alt="cart" /></Link>
       </div>
     </header>
   )
