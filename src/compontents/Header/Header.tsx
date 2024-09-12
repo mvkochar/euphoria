@@ -9,11 +9,11 @@ const Header = () => {
       <div> <Link to="/"><img src="/images/logo.svg" alt="Logo" /></Link> </div>
       <nav>
         <ul className="header-nav d-f">
-          <li className="header-nav-item"><a href="">Shop</a></li>
-          <li className="header-nav-item"><a href="">Men</a></li>
+          <li className="header-nav-item"><Link to="/catalog">Shop</Link></li>
+          <li className="header-nav-item"><Link to="/men">Men</Link></li>
           <li className="header-nav-item"><Link to="/catalog">Women</Link></li>
-          <li className="header-nav-item"><a href="">Combos</a></li>
-          <li className="header-nav-item"><a href="">Jogger</a></li>
+          <li className="header-nav-item"><Link to="/combos">Combos</Link></li>
+          <li className="header-nav-item"><Link to="/jogger">Jogger</Link></li>
         </ul>
       </nav>
       <form action="" className="header-search-fm d-f align-center">

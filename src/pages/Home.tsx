@@ -4,6 +4,7 @@ import { MenCategoriesList, WomenCategoriesList } from '../compontents/Catategor
 import CategoriesItem from '../compontents/CategoriesItem/CategoriesItem'
 import ProductsItem from '../compontents/ProductsItem/ProductsItem'
 import ProductsList from '../compontents/ProductsList/ProducttsList'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
             <h4 className="home-main-above">T-shirt / Tops</h4>
             <h1 className="home-main-title">Summer Value Pack</h1>
             <h5 className="home-main-tags">cool / colorful / comfy</h5>
-            <a href="" className="home-main-shop">Shop Now</a>
+            <Link to="/catalog" className="home-main-shop">Shop Now</Link>
           </div>
         </div>
         <button className='btn-clear d-b'><img src="/images/next.png" alt="next" /></button>

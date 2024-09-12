@@ -2,6 +2,7 @@ import React from 'react'
 import './css/Cart.css'
 import ProductsList from '../compontents/ProductsList/ProducttsList'
 import ProductsItem from '../compontents/ProductsItem/ProductsItem'
+import { Link } from 'react-router-dom'
 
 const MIN_PRODUCTS = 1
 const MAX_PRODUCTS = 100 
@@ -54,6 +55,15 @@ const Cart = () => {
                 prevState + 1
             )
         })
+    }
+
+    const subtotal = ()=> {
+        let res = 0
+        res += (parseFloat(ProductsList[0].price) * productOneCount)
+        res += (parseFloat(ProductsList[1].price) * productTwoCount)
+        res += (parseFloat(ProductsList[2].price) * productThreeCount)
+
+        return res
     }
 
     return (
@@ -187,6 +197,39 @@ const Cart = () => {
                     </tr>
                 </tbody>
             </table>
+            <div className="cart-subtotal d-f jc-sb">
+                <div>
+                    <h3 className="discount-title">Discount  Codes</h3>
+                    <h4 className="discount-subtitle">Enter your coupon code if you have one</h4>
+                    <form action="" className='discount-fm'>
+                        <input type="text" name='coupon' />
+                        <button type="button">Apply Coupon</button>
+                    </form>
+                    <Link to="/catalog" className='cart-subtotal-continue'>Continue Shopping</Link>
+                </div>
+                <div className="cart-subtotal-info">
+                    <table className='cart-subtotal-tb'>
+                        <tbody>
+                            <tr>
+                                <td>Sub Total</td>
+                                <td>${subtotal().toFixed(2)}</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping</td>
+                                <td>$5</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Grand Total</td>
+                                <td>${(subtotal() + 5).toFixed(2)}</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div className="cart-subtotal-divider"></div>
+                    <a href="" className="cart-subtotal-checkout">Proceed To Checkout</a>
+                </div>
+            </div>
         </>
     )
 }

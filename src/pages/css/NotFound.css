@@ -1,0 +1,53 @@
+.nf-top-line {
+    width: 100%;
+    height: 0;
+    border: 1px solid #BEBCBD;
+}
+
+.nf-main {
+    width: fit-content;
+    margin: 82px auto;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.nf-main-num {
+    position: absolute;
+    top: 55px;
+    left: -98px;
+}
+
+.nf-title {
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    color: #000;
+}
+
+.nf-subtitle {
+    width: 414px;
+    margin: 10px auto;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #807D7E;
+}
+
+.nf-home-link {
+    display: block;
+    width: 244px;
+    margin: 42px auto;
+    margin-bottom: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #8A33FD;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}

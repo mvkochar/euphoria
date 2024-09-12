@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Cart, Catalog, Home, Product } from '../../pages'
+import { Cart, Catalog, Home, NotFound, Product } from '../../pages'
 
 const Main = () => {
   return (
@@ -20,6 +20,10 @@ const Main = () => {
         <Route
           path='cart'
           element={<Cart/>}
+        />
+        <Route
+          path='*'
+          element={<NotFound/>}
         />
     </Routes>
   )
