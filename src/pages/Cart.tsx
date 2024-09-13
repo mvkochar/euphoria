@@ -227,7 +227,7 @@ const Cart = () => {
                         </tfoot>
                     </table>
                     <div className="cart-subtotal-divider"></div>
-                    <a href="" className="cart-subtotal-checkout">Proceed To Checkout</a>
+                    <Link to="/checkout" className="cart-subtotal-checkout">Proceed To Checkout</Link>
                 </div>
             </div>
         </>

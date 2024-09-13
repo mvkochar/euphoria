@@ -1,0 +1,174 @@
+.checkout-top-divider {
+    width: 100%;
+    height: 0;
+    border: 1px solid #BEBCBD;
+}
+
+.checkout-bl-divider {
+    width: 840px;
+    height: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EDEEF2;
+}
+
+.checkout-wr {
+    margin-top: 97px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.checkout-bl-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: .02em;
+    color: #3C4242;
+}
+
+.checkout-bl-desc {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #3C4242;
+}
+
+.checkout-billing-title {
+    margin-top: 20px;
+}
+
+.checkout-billing-fm {
+    margin-top: 50px;
+
+    .input-box {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .input-bl {
+        gap: 38px;
+    }
+
+    label {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: .02em;
+        color: #3C4242;
+    }
+
+    input {
+        display: block;
+        width: 382px;
+        margin-top: 10px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 20px;
+        background-color: #F6F6F6;
+        border: 1px solid #F6F6F6;
+        border-radius: 8px;
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: #807D7E;
+
+        &::placeholder {
+            color: #807D7E;
+        }
+    }
+
+    .input-bl-postal {
+        input {
+            width: 246px;
+        }
+    }
+
+    .select-bl {
+        width: 246px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #F6F6F6;
+        border: 1px solid #F6F6F6;
+        border-radius: 8px;
+
+        select {
+            width: 100%;
+            padding-top: 17.5px;
+            padding-bottom: 17.5px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-weight: 400;
+            font-size: 14px;
+            color: #807D7E;
+        }
+    }
+
+    button {
+        display: block;
+        width: 195px;
+        margin-top: 43px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-color: #8A33FD;
+        border: 1px solid #8A33FD;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .check-bl {
+        margin-top: 20px;
+        gap: 10px;
+
+        input {
+            width: 18px;
+            height: 18px;
+            padding: 0;
+        }
+
+        label {
+            margin-top: 11px;
+            font-weight: 400;        
+        }
+    }
+}
+
+.checkout-address-fm {
+    margin-top: 30px;
+    padding-top: 38px;
+    padding-bottom: 39px;
+    padding-left: 28px;
+    padding-right: 48px;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+
+    .radio-bl {
+        gap: 19px;
+    }
+
+    input {
+        display: block;
+        width: 18px;
+        height: 18px;
+    }
+
+    label {
+        display: block;
+        margin-top: 1px;
+        font-weight: 700;
+        font-size: 20px;
+        color: #3C4242;
+    }
+
+    .divider {
+        width: 764px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        height: 0;
+        border: 1px solid #BEBCBD;
+    }
+}
