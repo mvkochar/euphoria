@@ -1,7 +1,18 @@
 import React from 'react'
 import './css/Checkout.css'
+import ProductsList from '../compontents/ProductsList/ProducttsList'
 
 const Checkout = () => {
+  const subtotal = ()=> {
+    let res = 0;
+    
+    for (let i = 0; i < 3; i++ ) {
+      res += parseFloat(ProductsList[i].price) 
+    }
+
+    return res
+  }
+
   return (
     <>
       <div className="checkout-top-divider"></div>
@@ -90,6 +101,108 @@ const Checkout = () => {
               <label htmlFor="different">Use a different shipping address</label>
             </div>
           </form>
+          <div className="checkout-bl-divider"></div>
+          <h3 className="checkout-bl-title">Shipping Method</h3>
+          <div className="shippping-method-wr">
+            <div>
+              <div className="shipping-method-title">Arrives by Monday, June 7</div>
+              <div className="shipping-method-delivery d-f jc-sb">
+                <div>
+                  <div className="shipping-method-title">Delivery Charges</div>
+                  <div className="checkout-bl-desc">Additional fess may apply</div>
+                </div>
+                <div className="shipping-method-title">$5.00</div>
+              </div>
+            </div>
+          </div>
+          <div className="checkout-bl-divider"></div>
+          <h3 className="checkout-bl-title">Payment Method</h3>
+          <p className="checkout-bl-desc">All transactions are secure and encrypted.</p>
+          <form action="" className='checkout-payment-fm'>
+            <div className="radio-bl d-f align-center">
+              <input type="radio" name="paymentMethod" id="creditCard" />
+              <div>
+                <label htmlFor="creditCard">Credit Card</label>
+                <p className="checkout-bl-desc">We accept all major credit cards.</p>
+              </div>
+            </div>
+            <div className="payment-methods d-f">
+              <div><img src="/images/payment1.png" alt="payment1" /></div>
+              <div><img src="/images/payment2.png" alt="payment2" /></div>
+              <div><img src="/images/payment3.png" alt="payment3" /></div>
+              <div><img src="/images/payment4.png" alt="payment4" /></div>
+            </div>
+            <div className="chekout-credit-card d-f">
+              <input type="text" name='cardNumber' placeholder='Card number' />
+              <input type="text" name='cardName' placeholder='Name of card' />
+              <input type="text" name='expirationDate' placeholder='Expiration date (MM/YY)' />
+              <div className="pwd-wr d-f jc-sb">
+                <input type="password" name="code" placeholder='Security Code' />
+                <button type="button" className='btn-clear d-b'><img src="/images/eye.png" alt="eye" /></button>
+              </div>
+            </div>
+            <div className="divider"></div>
+            <div className="radio-bl d-f align-center">
+              <input type="radio" name="paymentMethod" id="cash" />
+              <div>
+                <label htmlFor="cash">Cash on delivery</label>
+                <p className="checkout-bl-desc">Pay with cash upon delivery.</p>
+              </div>
+            </div>
+            <div className="divider"></div>
+            <div className="radio-bl d-f align-center">
+              <input type="radio" name="paymentMethod" id="paypal" />
+              <label htmlFor="paypal">Paypal</label>
+            </div>
+          </form>
+          <a href="" className="checkout-pay-link">Pay Now</a>
+        </div>
+        <div className="checkout-order">
+          <h2 className="checkout-order-title">Order Summary</h2>
+          <div className="chechout-order-item d-f jc-sb align-center">
+            <div><img src={ProductsList[0].image} alt="product" width={63} /></div>
+            <div>
+              <div className="order-item-title">{ProductsList[0].title}</div>
+              <div className="order-item-color"><span>Color:</span> Yellow</div>
+            </div>
+            <div className="order-item-price">{ProductsList[0].price}</div>
+          </div>
+          <div className="chechout-order-item d-f jc-sb align-center">
+            <div><img src={ProductsList[1].image} alt="product" width={63} /></div>
+            <div>
+              <div className="order-item-title">{ProductsList[1].title}</div>
+              <div className="order-item-color"><span>Color:</span> Levender</div>
+            </div>
+            <div className="order-item-price">{ProductsList[1].price}</div>
+          </div>
+          <div className="chechout-order-item d-f jc-sb align-center">
+            <div><img src={ProductsList[2].image} alt="product" width={63} /></div>
+            <div>
+              <div className="order-item-title">{ProductsList[2].title}</div>
+              <div className="order-item-color"><span>Color:</span> Black</div>
+            </div>
+            <div className="order-item-price">{ProductsList[2].price}</div>
+          </div>
+          <div className="checkout-order-subtotal">
+             <div className="d-f jc-sb">
+              <div className="subtotal-title">Subtotal <span>( 3 items )</span></div>
+              <div className="subtotal-title">${subtotal().toFixed(2)}</div>
+             </div>
+             <div className="d-f jc-sb" style={{marginTop: "15px"}}>
+              <div className='subtotal-title'>Savings</div>
+              <div className='subtotal-title'>-$30.00</div>
+             </div>
+             <div className="divider"></div>
+             <div className="d-f jc-sb">
+              <div className='subtotal-title'>Shipping</div>
+              <div className='subtotal-title'>-$5.00</div>
+             </div>
+             <div className="divider"></div>
+             <div className="d-f jc-sb">
+              <div className=''>Total</div>
+              <div className='subtotal-title'>${(subtotal()-parseFloat("30.00") - parseFloat('5.00')).toFixed(2)}</div>
+             </div>
+          </div>
         </div>
       </div>
     </>

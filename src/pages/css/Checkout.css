@@ -132,7 +132,7 @@
 
         label {
             margin-top: 11px;
-            font-weight: 400;        
+            font-weight: 400;
         }
     }
 }
@@ -170,5 +170,195 @@
         margin-bottom: 25px;
         height: 0;
         border: 1px solid #BEBCBD;
+    }
+}
+
+.shippping-method-wr {
+    width: 840px;
+    margin-top: 30px;
+    padding: 32px 48px 32px 26px;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+}
+
+.shipping-method-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #3C4242;
+}
+
+.shipping-method-delivery {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #BEBCBD;
+}
+
+.checkout-payment-fm {
+    width: 840px;
+    margin-top: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 28px;
+    padding-right: 48px;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+
+    .divider {
+        width: 764px;
+        height: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 1px solid #BEBCBD;
+    }
+
+    .radio-bl {
+        gap: 19px;
+
+        input {
+            display: block;
+            width: 18px;
+            height: 18px;
+        }
+
+        label {
+            display: block;
+            font-weight: 700;
+            font-size: 20px;
+            color: #3C4242;
+        }
+    }
+
+    .payment-methods {
+        margin-top: 30px;
+        margin-left: 37px;
+        gap: 20px;
+    }
+
+    .chekout-credit-card {
+        margin-top: 30px;
+        margin-left: 37px;
+        flex-wrap: wrap;
+        row-gap: 25px;
+        column-gap: 30px;
+
+        input {
+            display: block;
+            width: 337px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 20px;
+            border: 1px solid #3C4242;
+            border-radius: 8px;
+            outline: none;
+            font-weight: 400;
+            font-size: 14px;
+            color: #807D7E;
+
+            &::placeholder {
+                color: #807D7E;
+            }
+        }
+
+        .pwd-wr {
+            width: 337px;
+            padding-right: 20.17px;
+            border: 1px solid #3C4242;
+            border-radius: 8px;
+
+            input {
+                width: 80%;
+                border: none;
+            }
+        }
+
+    }
+}
+
+.checkout-pay-link {
+    display: block;
+    width: 108px;
+    margin-top: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #8A33FD;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.checkout-order {
+    width: 400px;
+    height: fit-content;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 22px;
+    padding-right: 21px;
+    border: 1px solid #EDEEF2;
+}
+
+.checkout-order-title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EDEEF2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #3C4242;
+}
+
+.chechout-order-item {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EDEEF2;
+
+    .order-item-title {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: .02em;
+        color: #3C4242;
+    }
+
+    .order-item-color {
+        margin-top: 5px;
+        font-size: 14px;
+        letter-spacing: .02em;
+        color: #807D7E;
+
+        span {
+            font-weight: 700;
+            color: #3C4242;
+        }
+    }
+
+    .order-item-price {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: .02em;
+        color: #807D7E;
+    }
+}
+
+.checkout-order-subtotal {
+    margin-top:  15px;
+
+    .subtotal-title {
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: .02em;
+        color: #3C4242;
+
+        span {
+            font-weight: 400;
+            color: #807D7E;
+        }
+    }
+
+    .divider {
+        width: 357px;
+        height: 0;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #EDEEF2;
     }
 }
